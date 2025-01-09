@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+  }
+  
+  header h1 {
+    color: white;
+  }
+
+  header {
+    background: rgb(57, 59, 59);
+    padding: 2rem;
+    grid-column: 1 / 4;
+  }
+  
+  .left-sidebar {
+    background: rgb(201, 202, 202);
+    grid-column: 1 / 2;
+  }
+  
+  main {
+    background: rgb(201, 202, 202);
+    grid-column: 2 / 3;
+  }
+  
+  .right-sidebar {
+    background: rgb(255, 255, 255);
+    grid-column: 3 / 4;
+  }
+  
+  footer {
+    background: rgb(57, 59, 59);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
+
+  footer[contenteditable] {
+    color: white;
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    padding: 1rem;
+  }
