@@ -3,9 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131</title>
+        <meta name="description" content="WDD 131 - Web Development course by Isadora Paula">
+        <meta name="keywords" content="HTML, CSS, Web Development, WDD 131">
+        <meta name="author" content="Isadora Paula">
+        <title>WDD 131 - Dynamic Web Fundamentals - Iadora Paula</title>
+        <link rel="stylesheet" href="styles/base.css">
     </head>
     <body>
-        <h1>WDD 131 - Isadora Paula</h1>
+        <header>
+            <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=por&id=p6#p6" target="_blank">Favorite Scripture</a></li>
+                    <li><a href="#" target="_blank">Final Project</a></li>
+                </ul>
+            </nav>
+    </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/About me.JPEG" alt="A photo representing me" width="100">
+                <p>Hello! I'm Isadora Paula, and I'm currently learning web development in WDD 131. I love building creative and user-friendly websites!</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com" target="_blank">HTML and CSS Tutorials</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>My Projects</h2>
+                <p>Throughout this course, I am working on multiple projects to build my skills in web development. Stay tuned for more updates!</p>
+                <ul>
+                    <li><a href="https://github.com" target="_blank">GitHub Repository</a></li>
+                    <li><a href="https://www.codecademy.com" target="_blank">CodeCademy Resources</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="year"></span> Isadora Paula - Brazil. All rights reserved.</p>
+            <p>This document was last modified on: <span id="modified"></span></p>
+        </footer>
+        <script src="scripts/getdates.js" defer></script>
     </body>
 </html>
