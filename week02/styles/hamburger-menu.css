@@ -1,0 +1,77 @@
+/* General resets */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+#menuButton {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#navMenu {
+    display: none; /* Hidden by default */
+}
+
+#navMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#navMenu ul li {
+    border-bottom: 1px solid #444;
+}
+
+#navMenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#navMenu ul li a.active {
+    background-color: #555; /* Change background for active link */
+    font-weight: bold;      /* Make the active link bold */
+    color: #fff;            /* Ensure the text color contrasts well */
+}
+
+/* Show the menu when the "show" class is added */
+#navMenu.show {
+    display: block;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #menuButton {
+        display: none; /* Hide the hamburger button on larger screens */
+    }
+
+    #navMenu {
+        display: block; /* Show the menu by default */
+    }
+
+    #navMenu ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navMenu ul li {
+        border: none;
+    }
+}

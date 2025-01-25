@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #4A148C;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    display: none;
+    background: #4A148C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-menu ul li {
+    padding: 0.5rem 0;
+}
+
+#nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#nav-menu ul li a:hover {
+    background-color: #6A1B9A;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+#nav-menu.visible {
+    display: block;
+}
+
+footer {
+    background-color: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+footer p:first-child {
+    font-size: 1.2rem; /* Make your name larger */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+footer p:last-child {
+    font-size: 0.9rem; /* Keep "Last Modification" smaller */
+}
+
+/* Grid for Images */
+main {
+    padding: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: 1 image per row (mobile) */
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #nav-menu {
+        position: static;
+        display: block;
+        box-shadow: none;
+        background: none;
+        padding: 0;
+    }
+
+    #nav-menu ul {
+        flex-direction: row;
+    }
+
+    #nav-menu ul li {
+        padding: 0 1rem;
+    }
+}
