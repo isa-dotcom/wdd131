@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #76695E;
+            color: white;
+            text-align: center;
+            padding: 45px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .content {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .data-section, .weather-section {
+            margin: 10px;
+            padding: 5px;
+            border: 1px #9E8B79;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 400px;
+            background: #f9f9f9;
+        }
+        .data-section h2, .weather-section h2 {
+            background: #9E8B79;
+            color: white;
+            margin: 5px;
+            padding: 15px;
+            border-radius: 3px;
+        }
+        .data-list, .weather-list {
+            list-style-type: none;
+            padding: 10px;
+            margin: 0px 0;
+        }
+        .data-list li, .weather-list li {
+            margin: 5px 0;
+        }
+        .footer {
+            background: #76695E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-display: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Madagascar</div>
+
+    <div class="content">
+        <div class="image-container">
+            <img src="images/molnartamasphotography.jpg" alt="Madagascar Lemur">
+        </div>
+
+        <div class="data-section">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
+        </div>
+
+        <div class="weather-section">
+            <h2>Weather ⛅</h2>
+            <ul class="weather-list">
+                <li><strong>Temperature:</strong> 10°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> 9.8°C</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; <span id="year"></span> 🍁 Isadora Paula da Cunha 🍁 Madagascar<br>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+</body>
+</html>
+
+
+
