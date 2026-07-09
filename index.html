@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals – Isadora Paula</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Isadora Paula | Portfolio and learning projects using HTML, CSS, and JavaScript.">
-    <meta name="author" content="Isadora Paula">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Isadora Paula. Personal homepage about web development, programming and Brazil.">
+    <meta name="author" content="Isadora Paula">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p6#p6" target="_blank">Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
+  <header>
+    <span id="course-title"> WDD 131: Dynamic Web Fundamentals </span>
+    <nav>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=por&id=p6#p6" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Isadora Paula</h1>
+    <div class="cards">
       <section class="card">
         <h2>About Me</h2>
-        <div class="profile-box">
-          <p>Hello! My name is Isadora Paula. I am passionate about design, marketing, and technology. I enjoy creating digital content that inspires learning and creativity. This page is my starting point for WDD 131, where I’ll share my progress in web development.</p>
-          <img src="images/profile.jpeg" alt="Photo of Isadora Paula">
+        <div class="about">
+          <p> My name is Isadora Paula. I live in Brazil and I am studying Software Development at BYU–Idaho.
+            I enjoy programming, photography, video editing, and creating digital content.
+            I love learning new technologies and using creativity to solve problems.
+          </p>
+          <img src="images/profile.jpeg" alt="Profile Picture">
         </div>
-        <h3>Fortaleza, Brasil</h3>
+        <h3>Fortaleza, Brazil</h3>
         <hr>
-        <div class="flag-box">
-          <img src="images/brazil.jpg" alt="City or map illustration">
-          <p>I’m from Brazil 🇧🇷, a country full of color, creativity, and passion. I’m excited to connect global perspectives through web design and dynamic web applications!</p>
-        </div>
-        <div class="flag-name">
-          <p><em>Official Flag of Brazil</em></p>
+        <div class="country">
+          <figure>
+            <img src="images/brazil.jpg" alt="Flag of Brazil">
+            <figcaption>
+              <em>Official Flag of Brazil</em>
+            </figcaption>
+          </figure>
+          <p> Brazil is the largest country in South America and is known for its rich culture, beautiful beaches,
+            and incredible biodiversity. Fortaleza is located in northeastern Brazil and is famous for its warm
+            weather and coastline. </p>
         </div>
       </section>
       <section class="card resources">
         <h2>Web Dev Resources</h2>
-        <aside class="box">
-          <ul>
-            <li><a href="#">Dev.to Community</a></li>
-            <li><a href="#">Smashing Magazine</a></li>
-            <li><a href="#">CSS Tricks</a></li>
-            <li><a href="#">W3 Schools</a></li>
-            <li><a href="#">Udemy</a></li>
-            <li><a href="#">Image Placeholder</a></li>
-          </ul>
-        </aside>
+        <ul>
+          <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+          <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+          <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+          <li><a href="https://codepen.io/">CodePen</a></li>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
       </section>
-    </main>
+    </div>
+  </main>
   <footer>
-    <p>&copy; <span id="currentyear"></span> Isadora Paula | Brazil</p>
+    <p> © <span id="currentyear"></span> ✨ Isadora Paula ✨ Brazil </p>
     <p id="lastModified"></p>
   </footer>
 </body>
