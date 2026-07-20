@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root {
+    --primary-color: #c8102e;
+    --secondary-color: rgba(0, 122, 61, 0.85);
+    --background-color: #ffffff;
+    --text-color: #222;
+    --card-background: rgba(255,255,255,.70);
+    --font-family: "Roboto", sans-serif;
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:var(--font-family);
+    color:var(--text-color);
+    background:white;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:var(--primary-color);
+    color:white;
+    text-align:center;
+    padding:1.6rem;
+    border-bottom:10px solid var(--secondary-color);
+}
+
+header h1{
+    font-size:2.7rem;
+    font-weight:700;
+}
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero{
+    position:relative;
+}
+
+.hero-image,
+picture img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+.hero picture img {
+    display: block;
+    width: 100%;
+    border-bottom: 6px solid var(--primary-color);
+}
+
+.data-section,
+.weather-section{
+    background:white;
+    padding:2rem 1rem;
+    text-align:center;
+}
+
+.data-section{
+    border-bottom:1px solid #ddd;
+}
+
+.data-section h2,
+.weather-section h2{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+.weather-icon{
+    width:60px;
+    margin:0 auto 1rem;
+    display:block;
+}
+
+.data-section ul,
+.weather-section ul{
+    list-style:none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.data-section li,
+.weather-section li{
+    margin:.45rem 0;
+    font-size:1rem;
+}
+
+footer{
+    background:var(--primary-color);
+    color:white;
+    text-align:center;
+    padding:1.3rem;
+}
+
+footer p{
+    margin:.35rem;
+}
+
+/* =====================================
+   DESKTOP
+===================================== */
+
+@media (min-width:768px){
+
+.hero-picture img{
+    width:100%;
+    height:640px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CARDS */
+
+.data-section,
+.weather-section{
+    position:absolute;
+    background:var(--card-background);
+    padding:1rem;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+/* DATA */
+
+.data-section {
+    width: 285px;
+    top: 38px;
+    left: 22px;
+    text-align: center;
+}
+
+/* WEATHER */
+
+.weather-section {
+    width: 235px;
+    right: 22px;
+    bottom: 38px;
+    text-align: center;
+}
+
+/* GREEN BARS */
+
+.data-section h2,
+.weather-section h2{
+    background:var(--secondary-color);
+    color:white;
+    width:112%;
+    margin:0 0 1rem -1.6rem;
+    padding:.75rem 1rem;
+    font-size:1.8rem;
+    text-align: left;
+}
+
+/* Assignment requirement */
+
+.weather-section h2::after{
+    content:" ⛅";
+    font-size:.8em;
+}
+
+/* Hide SVG on desktop */
+
+.weather-icon{
+    display:none;
+}
+
+.data-section li,
+.weather-section li{
+    font-size:.92rem;
+    line-height:1.5;
+}
+
+}
