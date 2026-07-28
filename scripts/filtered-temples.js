@@ -238,7 +238,7 @@ document.querySelector("#small").addEventListener("click", (e) => {
 // ===============================
 
 document.querySelector("#currentyear").textContent =
-new Date().getFullYear();
+    new Date().getFullYear();
 
 document.querySelector("#last-modified").textContent =
-document.lastModified;
+    document.lastModified;
