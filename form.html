@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Review Form</title>
+
+    <meta name="description" content="Product review form page">
+    <meta name="author" content="Isadora Paula">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Product Review</h1>
+</header>
+
+
+<main>
+
+<form method="get" action="review.html">
+
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+    </select>
+
+
+    <fieldset>
+        <legend>Overall Rating</legend>
+
+        <label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            ☆
+        </label>
+
+        <label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+            ☆☆
+        </label>
+
+        <label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+            ☆☆☆
+        </label>
+
+        <label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+            ☆☆☆☆
+        </label>
+
+        <label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+            ☆☆☆☆☆
+        </label>
+
+    </fieldset>
+
+
+    <label for="date">Date of Installation</label>
+    <input 
+        type="date" 
+        id="date" 
+        name="date"
+        required>
+
+
+    <fieldset>
+
+        <legend>Useful Features</legend>
+
+        <label>
+            <input 
+            type="checkbox"
+            id="feature1"
+            name="features"
+            value="durability">
+            Durability
+        </label>
+
+
+        <label>
+            <input 
+            type="checkbox"
+            id="feature2"
+            name="features"
+            value="ease">
+            Ease of Use
+        </label>
+
+
+        <label>
+            <input 
+            type="checkbox"
+            id="feature3"
+            name="features"
+            value="performance">
+            Performance
+        </label>
+
+
+        <label>
+            <input 
+            type="checkbox"
+            id="feature4"
+            name="features"
+            value="design">
+            Design
+        </label>
+
+    </fieldset>
+
+
+
+    <label for="review">
+        Written Review
+    </label>
+
+    <textarea 
+        id="review"
+        name="review">
+    </textarea>
+
+
+
+    <label for="username">
+        Your Name
+    </label>
+
+    <input 
+        type="text"
+        id="username"
+        name="username">
+
+
+
+    <input 
+        type="submit"
+        value="Submit Review">
+
+
+</form>
+
+
+</main>
+
+
+
+<footer>
+    <p>
+        © <span id="year"></span> | Isadora Paula | Brazil
+    </p>
+</footer>
+
+
+</body>
+
+</html>
