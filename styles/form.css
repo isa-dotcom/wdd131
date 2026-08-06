@@ -1,3 +1,5 @@
+@media screen and (max-width: 600px) {
+
 * {
     box-sizing: border-box;
 }
@@ -119,4 +121,5 @@ footer {
 
     padding:20px;
 
+}
 }
