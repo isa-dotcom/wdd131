@@ -1,5 +1,3 @@
-@media screen and (max-width: 600px) {
-
 * {
     box-sizing: border-box;
 }
@@ -9,37 +7,49 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
 
     margin: 0;
 
+    color: #333;
+
 }
+
 
 
 header {
 
     background-color: #264653;
 
-    color:white;
+    color: white;
 
-    padding:20px;
+    text-align: center;
 
-    text-align:center;
+    padding: 1.5rem;
 
 }
 
 
+
+h1 {
+
+    margin: 0;
+
+}
+
+
+
 main {
 
-    max-width:600px;
+    max-width: 650px;
 
-    margin:20px auto;
+    margin: 2rem auto;
 
-    background:white;
+    background-color: white;
 
-    padding:25px;
+    padding: 2rem;
 
-    border-radius:10px;
+    border-radius: 10px;
 
 }
 
@@ -47,11 +57,11 @@ main {
 
 form {
 
-    display:flex;
+    display: flex;
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:15px;
+    gap: 1rem;
 
 }
 
@@ -59,25 +69,29 @@ form {
 
 label {
 
-    font-weight:bold;
+    font-weight: bold;
 
 }
+
 
 
 input,
 select,
 textarea {
 
-    padding:10px;
+    font-size: 1rem;
 
-    font-size:1rem;
+    padding: 0.7rem;
 
 }
 
 
+
 textarea {
 
-    height:120px;
+    height: 120px;
+
+    resize: vertical;
 
 }
 
@@ -85,31 +99,58 @@ textarea {
 
 fieldset {
 
-    border:1px solid #ccc;
+    border: 1px solid #aaa;
 
-    padding:15px;
+    padding: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .5rem;
 
 }
+
+
+
+legend {
+
+    font-weight: bold;
+
+}
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+
+    margin-right: .5rem;
+
+}
+
 
 
 input[type="submit"] {
 
-    background:#264653;
+    background-color: #264653;
 
-    color:white;
+    color: white;
 
-    border:none;
+    border: none;
 
-    cursor:pointer;
+    padding: 1rem;
 
-    padding:12px;
+    cursor: pointer;
+
+    border-radius: 5px;
 
 }
 
 
+
 input[type="submit"]:hover {
 
-    background:#2a9d8f;
+    background-color: #2a9d8f;
 
 }
 
@@ -117,9 +158,48 @@ input[type="submit"]:hover {
 
 footer {
 
-    text-align:center;
+    text-align: center;
 
-    padding:20px;
+    padding: 1rem;
+
+    background-color: #264653;
+
+    color: white;
 
 }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    main {
+
+        margin: 1rem;
+
+        padding: 1rem;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    input,
+    select,
+    textarea {
+
+        width: 100%;
+
+    }
+
+
 }
