@@ -1,0 +1,161 @@
+@media screen and (min-width: 768px) {
+
+    .header-container {
+
+        padding: 1.5rem 2rem;
+
+    }
+
+
+    .menu-button {
+
+        display: none;
+
+    }
+
+
+    .navigation {
+
+        position: static;
+
+        display: flex;
+
+        width: auto;
+
+        padding: 0;
+
+        gap: 2rem;
+
+        border: none;
+
+    }
+
+
+    .hero {
+
+        min-height: 80vh;
+
+        padding: 6rem 2rem;
+
+        display: grid;
+
+        grid-template-columns: 1fr .8fr;
+
+        align-items: center;
+
+        gap: 5rem;
+
+    }
+
+
+    .hero h1,
+    .page-hero h1 {
+
+        font-size: clamp(3.5rem, 6vw, 5.5rem);
+
+    }
+
+
+    .page-hero {
+
+        padding: 7rem 2rem 5rem;
+
+    }
+
+
+    .section {
+
+        padding: 7rem 2rem;
+
+    }
+
+
+    .services-heading,
+    .portfolio-heading {
+
+        flex-direction: row;
+
+        align-items: flex-end;
+
+        justify-content: space-between;
+
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .portfolio-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .portfolio-large {
+
+        grid-column: span 2;
+
+    }
+
+
+    .project-card:first-child {
+
+        grid-column: span 2;
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5rem;
+
+        align-items: start;
+
+    }
+
+
+    .contact-form-container {
+
+        padding: 3rem;
+
+    }
+
+
+    .footer-container {
+
+        padding: 4rem 2rem;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+    }
+
+
+    .footer-links {
+
+        flex-direction: row;
+
+        gap: 2rem;
+
+    }
+
+
+    .footer-bottom {
+
+        padding: 1.5rem 2rem;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+    }
+
+}
