@@ -440,55 +440,19 @@ function setupPortfolioFilters() {
 
 function setupContactForm() {
 
-    if (!contactForm || !formMessage) {
+    if (!contactForm) {
         return;
     }
 
 
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", () => {
 
-        event.preventDefault();
+        if (formMessage) {
 
+            formMessage.textContent =
+                "Sending your message...";
 
-        const name = document.querySelector("#name").value.trim();
-        const email = document.querySelector("#email").value.trim();
-        const service = document.querySelector("#service").value;
-        const message = document.querySelector("#message").value.trim();
-
-
-        if (!name || !email || !service || !message) {
-
-            formMessage.textContent = `
-                Please complete all fields before sending.
-            `;
-
-            return;
         }
-
-
-        const contactData = {
-
-            name: name,
-            email: email,
-            service: service,
-            message: message
-
-        };
-
-
-        localStorage.setItem(
-            "contactFormData",
-            JSON.stringify(contactData)
-        );
-
-
-        formMessage.textContent = `
-            Thank you, ${name}! Your project information has been saved.
-            I will be in touch soon.
-        `;
-
-
-        contactForm.reset();
 
     });
 
