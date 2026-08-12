@@ -6,12 +6,21 @@
 
     <title>Contact | IS | Isadora Paula</title>
 
+    <link rel="icon" href="images/logo.png">
+
     <meta
         name="description"
         content="Contact IS | Isadora Paula to discuss photography, filmmaking, graphic design, and creative projects."
     >
 
     <meta name="author" content="Isadora Paula">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -25,7 +34,15 @@
 
     <div class="header-container">
 
-        <a class="logo" href="index.html">
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="IS Isadora Paula home"
+        >
+            <img
+                src="images/logo.png"
+                alt="IS | Isadora Paula"
+            >
             IS | Isadora Paula
         </a>
 
@@ -35,11 +52,16 @@
             type="button"
             aria-label="Open navigation menu"
             aria-expanded="false"
+            aria-controls="navigation"
         >
             ☰
         </button>
 
-        <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <nav
+            class="navigation"
+            id="navigation"
+            aria-label="Main navigation"
+        >
 
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -51,7 +73,6 @@
     </div>
 
 </header>
-
 
 <main>
 
@@ -71,27 +92,21 @@
 
     </section>
 
-
     <section class="contact-section section">
 
         <div class="contact-grid">
 
-
             <div class="contact-info">
 
                 <div class="section-label">
-
                     <span>01</span>
                     <p>GET IN TOUCH</p>
-
                 </div>
-
 
                 <h2>
                     Let's make
                     <span>something happen.</span>
                 </h2>
-
 
                 <p>
                     Whether you need photography, video, design,
@@ -99,21 +114,25 @@
                     your project.
                 </p>
 
-
                 <div class="contact-details">
 
                     <div>
                         <span>Email</span>
-                        <a href="mailto:YOUR-EMAIL-HERE">
-                            YOUR-EMAIL-HERE
+
+                        <a href="mailto:is.isadorapaula@gmail.com">
+                            is.isadorapaula@gmail.com
                         </a>
                     </div>
 
-
                     <div>
                         <span>Instagram</span>
-                        <a href="YOUR-INSTAGRAM-LINK-HERE">
-                            @YOUR-INSTAGRAM
+
+                        <a
+                            href="https://www.instagram.com/is.mobile_/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @is.mobile_
                         </a>
                     </div>
 
@@ -121,10 +140,24 @@
 
             </div>
 
-
             <div class="contact-form-container">
 
-                <form id="contact-form">
+                <form id="contact-form"
+                    action="https://formsubmit.co/is.isadorapaula@gmail.com"
+                    method="POST"
+                >
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Project Inquiry - IS | Isadora Paula"
+                    >
+
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false"
+                    >
 
                     <div class="form-group">
 
@@ -140,7 +173,6 @@
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="email">Email</label>
@@ -154,7 +186,6 @@
                         >
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -196,7 +227,6 @@
 
                     </div>
 
-
                     <div class="form-group">
 
                         <label for="message">
@@ -212,14 +242,12 @@
 
                     </div>
 
-
                     <button
                         class="primary-button"
                         type="submit"
                     >
                         Send message
                     </button>
-
 
                     <p
                         id="form-message"
@@ -237,7 +265,6 @@
 
 </main>
 
-
 <footer class="site-footer">
 
     <div class="footer-container">
@@ -254,20 +281,22 @@
 
         </div>
 
-
         <div class="footer-links">
+
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+
         </div>
 
     </div>
 
-
     <div class="footer-bottom">
 
-        <p>© 2026 IS | Isadora Paula. All rights reserved.</p>
+        <p>
+            © 2026 IS | Isadora Paula. All rights reserved.
+        </p>
 
         <a href="references.html">References</a>
 

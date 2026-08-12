@@ -6,12 +6,21 @@
 
     <title>Services | IS | Isadora Paula</title>
 
+    <link rel="icon" href="images/logo.png">
+
     <meta
         name="description"
-        content="Creative services offered by IS | Isadora Paula."
+        content="Creative services offered by IS | Isadora Paula, including photography, filmmaking, graphic design, and creative content."
     >
 
     <meta name="author" content="Isadora Paula">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -25,7 +34,15 @@
 
     <div class="header-container">
 
-        <a class="logo" href="index.html">
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="IS Isadora Paula home"
+        >
+            <img
+                src="images/logo.png"
+                alt="IS | Isadora Paula"
+            >
             IS | Isadora Paula
         </a>
 
@@ -35,11 +52,16 @@
             type="button"
             aria-label="Open navigation menu"
             aria-expanded="false"
+            aria-controls="navigation"
         >
             ☰
         </button>
 
-        <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <nav
+            class="navigation"
+            id="navigation"
+            aria-label="Main navigation"
+        >
 
             <a href="index.html">Home</a>
             <a class="active" href="services.html">Services</a>
@@ -51,7 +73,6 @@
     </div>
 
 </header>
-
 
 <main>
 
@@ -71,14 +92,12 @@
 
     </section>
 
-
     <section class="services-page section">
 
         <div class="section-label">
             <span>01</span>
             <p>SERVICES</p>
         </div>
-
 
         <div class="services-grid">
 
@@ -102,7 +121,6 @@
 
             </article>
 
-
             <article class="service-card">
 
                 <span class="service-number">02</span>
@@ -123,7 +141,6 @@
 
             </article>
 
-
             <article class="service-card">
 
                 <span class="service-number">03</span>
@@ -143,7 +160,6 @@
                 </ul>
 
             </article>
-
 
             <article class="service-card">
 
@@ -169,7 +185,6 @@
 
     </section>
 
-
     <section class="cta">
 
         <p class="eyebrow">HAVE A PROJECT?</p>
@@ -186,7 +201,6 @@
     </section>
 
 </main>
-
 
 <footer class="site-footer">
 
@@ -205,18 +219,21 @@
         </div>
 
         <div class="footer-links">
+
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
+
         </div>
 
     </div>
 
-
     <div class="footer-bottom">
 
-        <p>© 2026 IS | Isadora Paula. All rights reserved.</p>
+        <p>
+            © 2026 IS | Isadora Paula. All rights reserved.
+        </p>
 
         <a href="references.html">References</a>
 

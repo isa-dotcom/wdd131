@@ -62,43 +62,213 @@ function setupNavigation() {
 
 const projects = [
 
+    /* PHOTOGRAPHY */
+
     {
-        title: "Stories Worth Remembering",
+        title: "HeadShot",
         category: "photography",
         categoryName: "Photography",
-        description: "A visual story created through intentional photography.",
-        image: "images/portfolio1.webp"
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-01.jpg"
     },
 
     {
-        title: "Moments in Motion",
+        title: "HeadShot",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-02.jpg"
+    },
+
+    {
+        title: "HeadShot",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-03.jpg"
+    },
+
+    {
+        title: "Growing Together",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-04.jpg"
+    },
+
+    {
+        title: "Growing Together",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-05.jpg"
+    },
+
+    {
+        title: "Before We Meet",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-06.jpg"
+    },
+
+    {
+        title: "Before We Meet",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-07.jpg"
+    },
+
+    {
+        title: "A Year to Remember",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-08.jpg"
+    },
+
+    {
+        title: "A Year to Remember",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-09.jpg"
+    },
+
+    {
+        title: "The Beginning of Forever",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-10.jpg"
+    },
+
+    {
+        title: "A Promise Made",
+        category: "photography",
+        categoryName: "Photography",
+        description: "Photography by Isadora Paula.",
+        image: "images/portfolio/photography-11.jpg"
+    },
+
+
+    /* FILMMAKING */
+
+    {
+        title: "The Moment We Found Out",
         category: "filmmaking",
         categoryName: "Filmmaking",
-        description: "A visual narrative created through video and movement.",
-        image: "images/portfolio2.webp"
+        description: "Visual storytelling by Isadora Paula.",
+        image: "images/portfolio/filmmaking-01.jpg",
+        videoUrl: "https://photos.app.goo.gl/1gSRTXeEsYoYc9hU9"
     },
 
     {
-        title: "Ideas With Identity",
+        title: "A Brand in Motion",
+        category: "filmmaking",
+        categoryName: "Filmmaking",
+        description: "Visual storytelling by Isadora Paula.",
+        image: "images/portfolio/filmmaking-02.jpg",
+        videoUrl: "https://photos.app.goo.gl/kKqYqyVypW7AKZZ9A"
+    },
+
+    {
+        title: "Before the 'I Do'",
+        category: "filmmaking",
+        categoryName: "Filmmaking",
+        description: "Visual storytelling by Isadora Paula.",
+        image: "images/portfolio/filmmaking-03.jpg",
+        videoUrl: "https://photos.app.goo.gl/vNhhq2EL62Z7ZdyR9"
+    },
+
+    /* DESIGN */
+
+    {
+        title: "Design 01",
         category: "design",
         categoryName: "Graphic Design",
-        description: "A creative design project focused on visual communication.",
-        image: "images/portfolio3.webp"
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-01.jpg"
     },
 
     {
-        title: "Content That Connects",
-        category: "content",
-        categoryName: "Creative Content",
-        description: "Creative content designed to communicate and connect.",
-        image: "images/portfolio1.webp"
+        title: "Design 02",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-02.jpg"
+    },
+
+    {
+        title: "Design 03",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-03.jpg"
+    },
+
+    {
+        title: "Design 04",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-04.jpg"
+    },
+
+    {
+        title: "Design 05",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-05.jpg"
+    },
+
+    {
+        title: "Design 06",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-06.jpg"
+    },
+
+    {
+        title: "Design 07",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-07.jpg"
+    },
+
+    {
+        title: "Design 08",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-08.jpg"
+    },
+
+    {
+        title: "Design 09",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-09.jpg"
+    },
+
+    {
+        title: "Design 10",
+        category: "design",
+        categoryName: "Graphic Design",
+        description: "Graphic design by Isadora Paula.",
+        image: "images/portfolio/design-10.jpg"
     }
 
 ];
 
 
 /* ==============================
-   DISPLAY PORTFOLIO
+DISPLAY PORTFOLIO
 ================================= */
 
 function displayProjects(projectList) {
@@ -120,20 +290,45 @@ function displayProjects(projectList) {
         return;
     }
 
-
     projectList.forEach((project) => {
 
         const projectCard = document.createElement("article");
 
         projectCard.classList.add("project-card");
 
+        /*
+        Se o projeto tiver um videoUrl,
+        a imagem será clicável e abrirá o vídeo.
+        */
+
+        const imageContent = project.videoUrl
+            ? `
+                <a
+                    href="${project.videoUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch ${project.title}"
+                >
+                    <img
+                        class="project-image"
+                        src="${project.image}"
+                        alt="${project.title}"
+                        loading="lazy"
+                    >
+                </a>
+            `
+            : `
+                <img
+                    class="project-image"
+                    src="${project.image}"
+                    alt="${project.title}"
+                    loading="lazy"
+                >
+            `;
+
         projectCard.innerHTML = `
-            <img
-                class="project-image"
-                src="${project.image}"
-                alt="${project.title}"
-                loading="lazy"
-            >
+
+            ${imageContent}
 
             <div class="project-content">
 
@@ -146,6 +341,7 @@ function displayProjects(projectList) {
                 <p>${project.description}</p>
 
             </div>
+
         `;
 
         portfolioGrid.appendChild(projectCard);
@@ -262,8 +458,9 @@ function setupContactForm() {
 
         if (!name || !email || !service || !message) {
 
-            formMessage.textContent =
-                "Please complete all fields before sending.";
+            formMessage.textContent = `
+                Please complete all fields before sending.
+            `;
 
             return;
         }
