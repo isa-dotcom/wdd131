@@ -218,6 +218,13 @@ button {
     border-color: var(--dark);
 }
 
+.brand-signature {
+    margin-top: 1.2rem;
+    font-family: var(--script-font);
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+
 .primary-button:focus-visible,
 .text-link:focus-visible,
 .filter-button:focus-visible,
@@ -487,20 +494,6 @@ button {
     font-size: 0.85rem;
 }
 
-.project-instagram {
-    display: inline-block;
-    margin-top: 0.8rem;
-    color: var(--blue);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-.project-instagram:hover {
-    color: var(--blue-dark);
-}
-
 /* INSTAGRAM */
 
 .instagram-section {
@@ -614,6 +607,12 @@ button {
 .form-group textarea:focus {
     outline: 2px solid var(--blue);
     outline-offset: 2px;
+}
+
+.form-group input.input-error,
+.form-group select.input-error,
+.form-group textarea.input-error {
+    border: 2px solid #d9534f;
 }
 
 .form-message {

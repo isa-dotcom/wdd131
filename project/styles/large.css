@@ -58,10 +58,6 @@
         grid-column: span 2;
     }
 
-    .project-card:first-child {
-        grid-column: span 2;
-    }
-
     .contact-grid {
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
